@@ -15,10 +15,23 @@
  */
 package org.springframework.social.spotify.api;
 
+import java.util.List;
+
 /**
+ * Interface defining album-related operations (loading album info, tracks from
+ * an album, etc.)
  *
  * @author André
  */
 public interface AlbumOperations {
-    
+
+    /**
+     * Loads an album by it's spotify id
+     *
+     * @param id the spotify id of the album
+     * @return the album
+     * @throws IllegalArgumentException if the id doesn't return any album
+     */
+    SpotifyAlbum getAlbum(String id);
+
 }

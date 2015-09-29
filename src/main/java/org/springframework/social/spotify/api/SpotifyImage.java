@@ -15,11 +15,12 @@
  */
 package org.springframework.social.spotify.api;
 
+import java.io.Serializable;
+
 /**
- * Interface defining operations for loading track informations
  *
- * @author André Lima
+ * @author André
  */
-public interface TrackOperations {
+public class SpotifyImage extends SpotifyObject implements Serializable {
 
 }
