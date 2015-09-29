@@ -25,4 +25,22 @@ import org.springframework.social.ApiBinding;
  */
 public interface Spotify extends ApiBinding {
 
+    AlbumOperations albumOperations();
+
+    ArtistOperations artistOperations();
+
+    BrowseOperations browseOperations();
+
+    FollowOperations followOperations();
+
+    LibraryOperations libraryOperations();
+
+    PlaylistOperations playlistOperations();
+
+    SearchOperations searchOperations();
+
+    ProfileOperations profileOperations();
+
+    TrackOperations trackOperations();
+
 }
