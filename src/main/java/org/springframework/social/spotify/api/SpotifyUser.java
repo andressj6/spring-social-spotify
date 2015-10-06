@@ -40,6 +40,22 @@ public class SpotifyUser extends SpotifyObject {
 
     private String type;
 
+    public SpotifyUser() {
+
+    }
+
+    public SpotifyUser(String uri, String id, String displayName, SpotifyExternalURL externalURL,
+            SpotifyFollower follower, String href, SpotifyImage image, String type) {
+        super(uri);
+        this.id = id;
+        this.displayName = displayName;
+        this.externalURL = externalURL;
+        this.follower = follower;
+        this.href = href;
+        this.image = image;
+        this.type = type;
+    }
+
     public String getId() {
         return id;
     }

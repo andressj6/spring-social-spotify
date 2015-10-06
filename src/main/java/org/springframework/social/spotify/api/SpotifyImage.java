@@ -17,10 +17,38 @@ package org.springframework.social.spotify.api;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 /**
  *
  * @author André
  */
-public class SpotifyImage extends SpotifyObject implements Serializable {
+@SuppressWarnings("serial")
+public class SpotifyImage implements Serializable {
+
+    private int height;
+
+    private int width;
+
+    private String url;
+
+    public SpotifyImage(@JsonProperty("height") int height, @JsonProperty("width") int width,
+            @JsonProperty("url") String url) {
+        this.height = height;
+        this.width = width;
+        this.url = url;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public String getUrl() {
+        return url;
+    }
 
 }

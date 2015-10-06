@@ -46,12 +46,12 @@ public class SpotifyPlaylistFull extends SpotifyPlaylist {
     }
 
     @Override
-    public List<String> getTracks() {
+    public SpotifyTrack getTracks() {
         return null;
     }
 
     @Override
-    public void setTracks(List<String> tracks) {
+    public void setTracks(SpotifyTrack tracks) {
 
     }
 
