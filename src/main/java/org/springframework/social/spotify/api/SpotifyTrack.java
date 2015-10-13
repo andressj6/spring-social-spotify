@@ -18,7 +18,10 @@ package org.springframework.social.spotify.api;
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Objects;
+
 import org.springframework.util.StringUtils;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  *
@@ -40,8 +43,11 @@ public class SpotifyTrack extends SpotifyObject implements Serializable {
     private String preview_url;
     private Integer track_number;
     private String type;
+    private int total;
 
-    public SpotifyTrack() {
+    public SpotifyTrack(@JsonProperty("href") String href, @JsonProperty("total") int total) {
+        this.href = href;
+        this.total = total;
     }
 
     public SpotifyArtist[] getArtists() {
@@ -159,6 +165,10 @@ public class SpotifyTrack extends SpotifyObject implements Serializable {
     @Override
     public String toString() {
         return "Track: "+ this.getName() + " - Artists+: " + StringUtils.arrayToCommaDelimitedString(this.getArtists()) + " | " + super.toString();
+    }
+
+    public int getTotal() {
+        return total;
     }
 
     @Override

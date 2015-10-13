@@ -21,37 +21,24 @@ import java.io.Serializable;
  *
  * @author André
  */
-public class SpotifyExternalURL extends SpotifyObject implements Serializable {
+@SuppressWarnings("serial")
+public class SpotifyExternalURL implements Serializable {
 
-    /**
-     * type of the URL, for example: "spotify" - The Spotify URL for the object
-     */
-    private String key;
+    private String spotify;
 
-    /**
-     * An external, public URL to the object.
-     */
-    private String value;
-
-    public SpotifyExternalURL(String key, String value) {
-        this.key = key;
-        this.value = value;
+    public SpotifyExternalURL() {
     }
 
-    public String getKey() {
-        return key;
+    public SpotifyExternalURL(String spotify) {
+        this.spotify = spotify;
     }
 
-    public void setKey(String key) {
-        this.key = key;
+    public String getSpotify() {
+        return spotify;
     }
 
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
+    public void setSpotify(String spotify) {
+        this.spotify = spotify;
     }
 
 }
