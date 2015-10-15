@@ -18,8 +18,10 @@ package org.springframework.social.spotify.api.impl;
 import org.springframework.social.spotify.api.CursoredSpotifyList;
 import org.springframework.social.spotify.api.PlaylistOperations;
 import org.springframework.social.spotify.api.SpotifyPlaylist;
+import org.springframework.social.spotify.api.SpotifyPlaylistFull;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
+import org.springframework.util.StringUtils;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -60,6 +62,24 @@ public class PlaylistTemplate extends AbstractSpotifyOperations implements Playl
 
         return restTemplate.getForObject(buildUri("users/" + userId + "/playlists", parameters),
                 CursoredSpotifyPlaylist.class).getPlaylists();
+    }
+
+    @Override
+    public SpotifyPlaylistFull getPlaylist(String userId, String playlistId) {
+        return this.getPlaylist(userId, playlistId, null);
+    }
+
+    @Override
+    public SpotifyPlaylistFull getPlaylist(String userId, String playlistId, String market) {
+        requireUserAuthorization();
+        
+        if (!StringUtils.isEmpty(market)) {
+            final MultiValueMap<String, String> parameters = new LinkedMultiValueMap<String, String>();
+            parameters.set("market", market);
+            return restTemplate.getForObject(buildUri("users/" + userId + "/playlists/" + playlistId, parameters), SpotifyPlaylistFull.class);
+        }
+        
+        return restTemplate.getForObject(buildUri("users/" + userId + "/playlists/" + playlistId), SpotifyPlaylistFull.class);
     }
 
 }

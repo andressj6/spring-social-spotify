@@ -18,7 +18,8 @@ package org.springframework.social.spotify.api;
 import org.springframework.social.MissingAuthorizationException;
 
 /**
- *
+ * Interface defining the operations for playlist.
+ * 
  * @author André
  */
 public interface PlaylistOperations {
@@ -33,7 +34,7 @@ public interface PlaylistOperations {
     public CursoredSpotifyList<SpotifyPlaylist> getUserPlaylists(String userId);
 
     /**
-     * Retrieves the playlist owned or followed by a Spotify user. 
+     * Retrieves the playlists owned or followed by a Spotify user. 
      * @param userId the id of Spotify user.
      * @param pageSize the maximum number of {@link SpotifyPlaylist} to return.
      * @throws MissingAuthorizationException if SpotifyTemplate was not created with OAuth credentials.
@@ -41,7 +42,7 @@ public interface PlaylistOperations {
     public CursoredSpotifyList<SpotifyPlaylist> getUserPlaylists(String userId, int pageSize);
 
     /**
-     * Retrieves the playlist owned or followed by a Spotify user. 
+     * Retrieves the playlists owned or followed by a Spotify user. 
      * @param userId the id of Spotify user.
      * @param pageSize the maximum number of {@link SpotifyPlaylist} to return.
      * @param offset the index of the first {@link SpotifyPlaylist} to return.
@@ -49,4 +50,22 @@ public interface PlaylistOperations {
      */
     public CursoredSpotifyList<SpotifyPlaylist> getUserPlaylists(String userId, int limit,
             int offset);
+
+    /**
+     * Get a playlist owned by Spotify user.
+     * @param userId The user's Spotify user ID.
+     * @param playlistId the Spotify ID for the playlist.
+     * @throws MissingAuthorizationException if SpotifyTemplate was not created with OAuth credentials.
+     */
+    public SpotifyPlaylistFull getPlaylist(String userId, String playlistId);
+
+    /**
+     * Get a playlist owned by Spotify user.
+     * @param userId The user's Spotify user ID.
+     * @param playlistId the Spotify ID for the playlist.
+     * @param market An ISO 3166-1 alpha-2 country code. Provide this parameter if you want to apply Track Relinking.
+     * @throws MissingAuthorizationException if SpotifyTemplate was not created with OAuth credentials.
+     */
+    public SpotifyPlaylistFull getPlaylist(String userId, String playlistId, String market);
+
 }

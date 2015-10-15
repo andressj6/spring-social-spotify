@@ -15,7 +15,12 @@
  */
 package org.springframework.social.spotify.api;
 
-import java.util.List;
+import org.springframework.social.spotify.api.impl.CursoredSpotifyPlaylistTrack;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+
 
 /**
  * Spotify playlist simplified object
@@ -27,7 +32,8 @@ public class SpotifyPlaylistFull extends SpotifyPlaylist {
     
     private SpotifyFollower followers;
     
-    private List<SpotifyPlaylistTrack> playlistTrack;
+    @JsonProperty("tracks")
+    private CursoredSpotifyPlaylistTrack playlistTrack;
 
     public SpotifyFollower getFollowers() {
         return followers;
@@ -37,22 +43,18 @@ public class SpotifyPlaylistFull extends SpotifyPlaylist {
         this.followers = followers;
     }
 
-    public List<SpotifyPlaylistTrack> getPlaylistTrack() {
+    public CursoredSpotifyPlaylistTrack getPlaylistTrack() {
         return playlistTrack;
     }
 
-    public void setPlaylistTrack(List<SpotifyPlaylistTrack> playlistTrack) {
+    public void setPlaylistTrack(CursoredSpotifyPlaylistTrack playlistTrack) {
         this.playlistTrack = playlistTrack;
     }
 
     @Override
+    @JsonIgnore
     public SpotifyTrack getTracks() {
         return null;
-    }
-
-    @Override
-    public void setTracks(SpotifyTrack tracks) {
-
     }
 
 }

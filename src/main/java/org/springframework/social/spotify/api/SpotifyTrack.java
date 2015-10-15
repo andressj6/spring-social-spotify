@@ -15,17 +15,20 @@
  */
 package org.springframework.social.spotify.api;
 
+import java.io.Serializable;
+import java.util.List;
 import java.util.Objects;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import java.util.List;
 import org.springframework.util.StringUtils;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 /**
- *
  * @author André
  */
-public class SpotifyTrack extends SpotifyObject {
+@JsonIgnoreProperties(value = {"external_ids"})
+public class SpotifyTrack extends SpotifyObject implements Serializable {
 
     private List<SpotifyArtist> artists;
     @JsonProperty("available_markets")
@@ -49,6 +52,9 @@ public class SpotifyTrack extends SpotifyObject {
     @JsonProperty("track_number")
     private Integer trackNumber;
     private String type;
+    private int total;
+    private int popularity;
+    private SpotifyAlbum album;
 
     public SpotifyTrack() {
     }
@@ -163,6 +169,18 @@ public class SpotifyTrack extends SpotifyObject {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public int getTotal() {
+        return total;
+    }
+
+    public SpotifyAlbum getAlbum() {
+        return album;
+    }
+
+    public int getPopularity() {
+        return popularity;
     }
 
     @Override

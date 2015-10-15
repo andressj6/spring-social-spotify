@@ -1,0 +1,235 @@
+{
+  "href" : "https://api.spotify.com/v1/users/12144452596/playlists?offset=0&limit=20",
+  "items" : [ {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/spotifybrazilian/playlist/0Qpzyjc36uoyc7OV8d9KwM"
+    },
+    "href" : "https://api.spotify.com/v1/users/spotifybrazilian/playlists/0Qpzyjc36uoyc7OV8d9KwM",
+    "id" : "0Qpzyjc36uoyc7OV8d9KwM",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/40cedaabc1ae7e8259a825ea53c07c0b55a1b950",
+      "width" : 300
+    } ],
+    "name" : "O Melhor do Racionais",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/spotifybrazilian"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotifybrazilian",
+      "id" : "spotifybrazilian",
+      "type" : "user",
+      "uri" : "spotify:user:spotifybrazilian"
+    },
+    "public" : false,
+    "snapshot_id" : "RpOBuHjoPhJrQUpkNPKamH/UqLDx2gD4SnjWUzmHYSdaAif8aUHft2nQAxC5oXrK",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/spotifybrazilian/playlists/0Qpzyjc36uoyc7OV8d9KwM/tracks",
+      "total" : 25
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:spotifybrazilian:playlist:0Qpzyjc36uoyc7OV8d9KwM"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/12144452596/playlist/7K1C7Ggtqepih1yUSSssab"
+    },
+    "href" : "https://api.spotify.com/v1/users/12144452596/playlists/7K1C7Ggtqepih1yUSSssab",
+    "id" : "7K1C7Ggtqepih1yUSSssab",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/b4867df0cb76010ae976f95d16edc83ca8497f3d",
+      "width" : 640
+    } ],
+    "name" : "Favoritos",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/12144452596"
+      },
+      "href" : "https://api.spotify.com/v1/users/12144452596",
+      "id" : "12144452596",
+      "type" : "user",
+      "uri" : "spotify:user:12144452596"
+    },
+    "public" : false,
+    "snapshot_id" : "CXlHvKDuJqMQ38TTAVghZL+Tr9ucIkJeGHYVCAb15Mal9J+YWvt7jT8JzMFuJzqu",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/12144452596/playlists/7K1C7Ggtqepih1yUSSssab/tracks",
+      "total" : 4
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:12144452596:playlist:7K1C7Ggtqepih1yUSSssab"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/spotify/playlist/4hOKQuZbraPDIfaGbM3lKI"
+    },
+    "href" : "https://api.spotify.com/v1/users/spotify/playlists/4hOKQuZbraPDIfaGbM3lKI",
+    "id" : "4hOKQuZbraPDIfaGbM3lKI",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/d5905c3899a14a48bd67d4ccfdea5ec14de74947",
+      "width" : 300
+    } ],
+    "name" : "Top 100 tracks currently on Spotify",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/spotify"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify",
+      "id" : "spotify",
+      "type" : "user",
+      "uri" : "spotify:user:spotify"
+    },
+    "public" : true,
+    "snapshot_id" : "7p0XZTQOdA7MBHXZQnRNWNQf1MvCvHXVmLNLzLBPEFZOTDUfNLv9IP83yqXA4sGA",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/4hOKQuZbraPDIfaGbM3lKI/tracks",
+      "total" : 100
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:spotify:playlist:4hOKQuZbraPDIfaGbM3lKI"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/spotifydiscover/playlist/11gQq65GebkkPj0GH1ed28"
+    },
+    "href" : "https://api.spotify.com/v1/users/spotifydiscover/playlists/11gQq65GebkkPj0GH1ed28",
+    "id" : "11gQq65GebkkPj0GH1ed28",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/63d27d95af152ba4045e5b2f49544431e990b8e0",
+      "width" : 300
+    } ],
+    "name" : "Discover Weekly",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/spotifydiscover"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotifydiscover",
+      "id" : "spotifydiscover",
+      "type" : "user",
+      "uri" : "spotify:user:spotifydiscover"
+    },
+    "public" : false,
+    "snapshot_id" : "lpyqm9C+JV8nFpwWg1ONvFAr4N3akZ6AQbWHjZDVtwjWFjX4AtvOGOmhvDEyL3Ks",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/spotifydiscover/playlists/11gQq65GebkkPj0GH1ed28/tracks",
+      "total" : 30
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:spotifydiscover:playlist:11gQq65GebkkPj0GH1ed28"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/12144452596/playlist/72qsWE0zaWYrfaXmqiKsOR"
+    },
+    "href" : "https://api.spotify.com/v1/users/12144452596/playlists/72qsWE0zaWYrfaXmqiKsOR",
+    "id" : "72qsWE0zaWYrfaXmqiKsOR",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://i.scdn.co/image/3d16a5fcec69e8a5bdd19c2a9a784706ae326962",
+      "width" : 640
+    } ],
+    "name" : "Turma do Pagode",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/12144452596"
+      },
+      "href" : "https://api.spotify.com/v1/users/12144452596",
+      "id" : "12144452596",
+      "type" : "user",
+      "uri" : "spotify:user:12144452596"
+    },
+    "public" : true,
+    "snapshot_id" : "jlkpxdke7dLMjC+HFPD6uFm8bfySM1wsE2zGQPgGg1JpPaIZe5mV1rVo8IEmcDsr",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/12144452596/playlists/72qsWE0zaWYrfaXmqiKsOR/tracks",
+      "total" : 4
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:12144452596:playlist:72qsWE0zaWYrfaXmqiKsOR"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/12144452596/playlist/72V1Td2kTQiMymu0oaHTU3"
+    },
+    "href" : "https://api.spotify.com/v1/users/12144452596/playlists/72V1Td2kTQiMymu0oaHTU3",
+    "id" : "72V1Td2kTQiMymu0oaHTU3",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/df08fc023b9fdf030ca24e07faca71495ad2f56f170a4a7c76a8d3d3cd5bea3c4b32a0ef90367441aec6da7fa2afdd0bfe91970bdd13961f67ff0f6699c74ed31a48062529804e3ccfb641d7a5578f80",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/df08fc023b9fdf030ca24e07faca71495ad2f56f170a4a7c76a8d3d3cd5bea3c4b32a0ef90367441aec6da7fa2afdd0bfe91970bdd13961f67ff0f6699c74ed31a48062529804e3ccfb641d7a5578f80",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/df08fc023b9fdf030ca24e07faca71495ad2f56f170a4a7c76a8d3d3cd5bea3c4b32a0ef90367441aec6da7fa2afdd0bfe91970bdd13961f67ff0f6699c74ed31a48062529804e3ccfb641d7a5578f80",
+      "width" : 60
+    } ],
+    "name" : "Samba",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/12144452596"
+      },
+      "href" : "https://api.spotify.com/v1/users/12144452596",
+      "id" : "12144452596",
+      "type" : "user",
+      "uri" : "spotify:user:12144452596"
+    },
+    "public" : true,
+    "snapshot_id" : "hi2RZ5pfYCSre6Ec1CExlEJXURfMQcFwzg9VNnn8Oh71k3ofpscwCvOH+B/Mm6Ns",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/12144452596/playlists/72V1Td2kTQiMymu0oaHTU3/tracks",
+      "total" : 7
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:12144452596:playlist:72V1Td2kTQiMymu0oaHTU3"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/12144452596/playlist/5z5a3AlKKxRpL4c9Fu1GWA"
+    },
+    "href" : "https://api.spotify.com/v1/users/12144452596/playlists/5z5a3AlKKxRpL4c9Fu1GWA",
+    "id" : "5z5a3AlKKxRpL4c9Fu1GWA",
+    "images" : [ {
+      "height" : 640,
+      "url" : "https://mosaic.scdn.co/640/9472ab821fdd06d6956f199465eec8848f0138db721969e38db8c5fd419bea79fa3376f42877a18905864fd13af5a957471946bc5526a6aa49a6357e0602ed9c52070950d5e63885898afb30f8103cda",
+      "width" : 640
+    }, {
+      "height" : 300,
+      "url" : "https://mosaic.scdn.co/300/9472ab821fdd06d6956f199465eec8848f0138db721969e38db8c5fd419bea79fa3376f42877a18905864fd13af5a957471946bc5526a6aa49a6357e0602ed9c52070950d5e63885898afb30f8103cda",
+      "width" : 300
+    }, {
+      "height" : 60,
+      "url" : "https://mosaic.scdn.co/60/9472ab821fdd06d6956f199465eec8848f0138db721969e38db8c5fd419bea79fa3376f42877a18905864fd13af5a957471946bc5526a6aa49a6357e0602ed9c52070950d5e63885898afb30f8103cda",
+      "width" : 60
+    } ],
+    "name" : "Reggae",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/12144452596"
+      },
+      "href" : "https://api.spotify.com/v1/users/12144452596",
+      "id" : "12144452596",
+      "type" : "user",
+      "uri" : "spotify:user:12144452596"
+    },
+    "public" : true,
+    "snapshot_id" : "CkU8QrOmnljSVYZGzjqw3L+dlEB7vEWNxL2SBVUdFSJ1lS1Hi1HsGboFvw1lZdq1",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/12144452596/playlists/5z5a3AlKKxRpL4c9Fu1GWA/tracks",
+      "total" : 7
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:12144452596:playlist:5z5a3AlKKxRpL4c9Fu1GWA"
+  } ],
+  "limit" : 20,
+  "next" : null,
+  "offset" : 0,
+  "previous" : null,
+  "total" : 7
+}
