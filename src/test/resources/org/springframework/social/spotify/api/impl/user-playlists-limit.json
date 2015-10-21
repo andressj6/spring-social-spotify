@@ -1,0 +1,65 @@
+{
+  "href" : "https://api.spotify.com/v1/users/wizzler/playlists?limit=2&offset=0",
+  "items" : [ {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/wizzler/playlist/6yRf9SJ1YiAhNAu7UCwgXQ"
+    },
+    "href" : "https://api.spotify.com/v1/users/wizzler/playlists/6yRf9SJ1YiAhNAu7UCwgXQ",
+    "id" : "6yRf9SJ1YiAhNAu7UCwgXQ",
+    "images" : [ ],
+    "name" : "My Shazam Tracks",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/wizzler"
+      },
+      "href" : "https://api.spotify.com/v1/users/wizzler",
+      "id" : "wizzler",
+      "type" : "user",
+      "uri" : "spotify:user:wizzler"
+    },
+    "public" : true,
+    "snapshot_id" : "F5gZpl62INAQEX+6zJjmM1i0AwojpFmrZSYVqCXuldItJ+c3pzYakQ1reah3pH5r",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/wizzler/playlists/6yRf9SJ1YiAhNAu7UCwgXQ/tracks",
+      "total" : 0
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:wizzler:playlist:6yRf9SJ1YiAhNAu7UCwgXQ"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/spotify/playlist/5FJXhjdILmRA2z5bvz4nzf"
+    },
+    "href" : "https://api.spotify.com/v1/users/spotify/playlists/5FJXhjdILmRA2z5bvz4nzf",
+    "id" : "5FJXhjdILmRA2z5bvz4nzf",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/5dfb04741061b084f91a862ebf332b8572cd3661",
+      "width" : 300
+    } ],
+    "name" : "Today's Top Hits",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/spotify"
+      },
+      "href" : "https://api.spotify.com/v1/users/spotify",
+      "id" : "spotify",
+      "type" : "user",
+      "uri" : "spotify:user:spotify"
+    },
+    "public" : true,
+    "snapshot_id" : "Q7vyg3EL5u1M4vS8ISVLk0zEe+pA80Jn2Gi05gX7MGymfXkessl3wrWfaJaHo0ID",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/5FJXhjdILmRA2z5bvz4nzf/tracks",
+      "total" : 50
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:spotify:playlist:5FJXhjdILmRA2z5bvz4nzf"
+  } ],
+  "limit" : 2,
+  "next" : "https://api.spotify.com/v1/users/wizzler/playlists?offset=2&limit=2",
+  "offset" : 0,
+  "previous" : null,
+  "total" : 8
+}

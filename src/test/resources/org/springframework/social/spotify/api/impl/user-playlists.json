@@ -1,78 +1,44 @@
 {
-  "href" : "https://api.spotify.com/v1/users/12144452596/playlists?offset=0&limit=20",
+  "href" : "https://api.spotify.com/v1/users/wizzler/playlists?limit=20&offset=0",
   "items" : [ {
     "collaborative" : false,
     "external_urls" : {
-      "spotify" : "http://open.spotify.com/user/spotifybrazilian/playlist/0Qpzyjc36uoyc7OV8d9KwM"
+      "spotify" : "http://open.spotify.com/user/wizzler/playlist/6yRf9SJ1YiAhNAu7UCwgXQ"
     },
-    "href" : "https://api.spotify.com/v1/users/spotifybrazilian/playlists/0Qpzyjc36uoyc7OV8d9KwM",
-    "id" : "0Qpzyjc36uoyc7OV8d9KwM",
-    "images" : [ {
-      "height" : 300,
-      "url" : "https://i.scdn.co/image/40cedaabc1ae7e8259a825ea53c07c0b55a1b950",
-      "width" : 300
-    } ],
-    "name" : "O Melhor do Racionais",
+    "href" : "https://api.spotify.com/v1/users/wizzler/playlists/6yRf9SJ1YiAhNAu7UCwgXQ",
+    "id" : "6yRf9SJ1YiAhNAu7UCwgXQ",
+    "images" : [ ],
+    "name" : "My Shazam Tracks",
     "owner" : {
       "external_urls" : {
-        "spotify" : "http://open.spotify.com/user/spotifybrazilian"
+        "spotify" : "http://open.spotify.com/user/wizzler"
       },
-      "href" : "https://api.spotify.com/v1/users/spotifybrazilian",
-      "id" : "spotifybrazilian",
+      "href" : "https://api.spotify.com/v1/users/wizzler",
+      "id" : "wizzler",
       "type" : "user",
-      "uri" : "spotify:user:spotifybrazilian"
+      "uri" : "spotify:user:wizzler"
     },
-    "public" : false,
-    "snapshot_id" : "RpOBuHjoPhJrQUpkNPKamH/UqLDx2gD4SnjWUzmHYSdaAif8aUHft2nQAxC5oXrK",
+    "public" : true,
+    "snapshot_id" : "F5gZpl62INAQEX+6zJjmM1i0AwojpFmrZSYVqCXuldItJ+c3pzYakQ1reah3pH5r",
     "tracks" : {
-      "href" : "https://api.spotify.com/v1/users/spotifybrazilian/playlists/0Qpzyjc36uoyc7OV8d9KwM/tracks",
-      "total" : 25
+      "href" : "https://api.spotify.com/v1/users/wizzler/playlists/6yRf9SJ1YiAhNAu7UCwgXQ/tracks",
+      "total" : 0
     },
     "type" : "playlist",
-    "uri" : "spotify:user:spotifybrazilian:playlist:0Qpzyjc36uoyc7OV8d9KwM"
+    "uri" : "spotify:user:wizzler:playlist:6yRf9SJ1YiAhNAu7UCwgXQ"
   }, {
     "collaborative" : false,
     "external_urls" : {
-      "spotify" : "http://open.spotify.com/user/12144452596/playlist/7K1C7Ggtqepih1yUSSssab"
+      "spotify" : "http://open.spotify.com/user/spotify/playlist/5FJXhjdILmRA2z5bvz4nzf"
     },
-    "href" : "https://api.spotify.com/v1/users/12144452596/playlists/7K1C7Ggtqepih1yUSSssab",
-    "id" : "7K1C7Ggtqepih1yUSSssab",
-    "images" : [ {
-      "height" : 640,
-      "url" : "https://i.scdn.co/image/b4867df0cb76010ae976f95d16edc83ca8497f3d",
-      "width" : 640
-    } ],
-    "name" : "Favoritos",
-    "owner" : {
-      "external_urls" : {
-        "spotify" : "http://open.spotify.com/user/12144452596"
-      },
-      "href" : "https://api.spotify.com/v1/users/12144452596",
-      "id" : "12144452596",
-      "type" : "user",
-      "uri" : "spotify:user:12144452596"
-    },
-    "public" : false,
-    "snapshot_id" : "CXlHvKDuJqMQ38TTAVghZL+Tr9ucIkJeGHYVCAb15Mal9J+YWvt7jT8JzMFuJzqu",
-    "tracks" : {
-      "href" : "https://api.spotify.com/v1/users/12144452596/playlists/7K1C7Ggtqepih1yUSSssab/tracks",
-      "total" : 4
-    },
-    "type" : "playlist",
-    "uri" : "spotify:user:12144452596:playlist:7K1C7Ggtqepih1yUSSssab"
-  }, {
-    "collaborative" : false,
-    "external_urls" : {
-      "spotify" : "http://open.spotify.com/user/spotify/playlist/4hOKQuZbraPDIfaGbM3lKI"
-    },
-    "href" : "https://api.spotify.com/v1/users/spotify/playlists/4hOKQuZbraPDIfaGbM3lKI",
-    "id" : "4hOKQuZbraPDIfaGbM3lKI",
+    "href" : "https://api.spotify.com/v1/users/spotify/playlists/5FJXhjdILmRA2z5bvz4nzf",
+    "id" : "5FJXhjdILmRA2z5bvz4nzf",
     "images" : [ {
       "height" : 300,
-      "url" : "https://i.scdn.co/image/d5905c3899a14a48bd67d4ccfdea5ec14de74947",
+      "url" : "https://i.scdn.co/image/5dfb04741061b084f91a862ebf332b8572cd3661",
       "width" : 300
     } ],
-    "name" : "Top 100 tracks currently on Spotify",
+    "name" : "Today's Top Hits",
     "owner" : {
       "external_urls" : {
         "spotify" : "http://open.spotify.com/user/spotify"
@@ -83,153 +49,197 @@
       "uri" : "spotify:user:spotify"
     },
     "public" : true,
-    "snapshot_id" : "7p0XZTQOdA7MBHXZQnRNWNQf1MvCvHXVmLNLzLBPEFZOTDUfNLv9IP83yqXA4sGA",
+    "snapshot_id" : "Q7vyg3EL5u1M4vS8ISVLk0zEe+pA80Jn2Gi05gX7MGymfXkessl3wrWfaJaHo0ID",
     "tracks" : {
-      "href" : "https://api.spotify.com/v1/users/spotify/playlists/4hOKQuZbraPDIfaGbM3lKI/tracks",
-      "total" : 100
+      "href" : "https://api.spotify.com/v1/users/spotify/playlists/5FJXhjdILmRA2z5bvz4nzf/tracks",
+      "total" : 50
     },
     "type" : "playlist",
-    "uri" : "spotify:user:spotify:playlist:4hOKQuZbraPDIfaGbM3lKI"
+    "uri" : "spotify:user:spotify:playlist:5FJXhjdILmRA2z5bvz4nzf"
   }, {
     "collaborative" : false,
     "external_urls" : {
-      "spotify" : "http://open.spotify.com/user/spotifydiscover/playlist/11gQq65GebkkPj0GH1ed28"
+      "spotify" : "http://open.spotify.com/user/wizzler/playlist/3FJd21jWvCjGCLx7eKrext"
     },
-    "href" : "https://api.spotify.com/v1/users/spotifydiscover/playlists/11gQq65GebkkPj0GH1ed28",
-    "id" : "11gQq65GebkkPj0GH1ed28",
+    "href" : "https://api.spotify.com/v1/users/wizzler/playlists/3FJd21jWvCjGCLx7eKrext",
+    "id" : "3FJd21jWvCjGCLx7eKrext",
     "images" : [ {
       "height" : 300,
-      "url" : "https://i.scdn.co/image/63d27d95af152ba4045e5b2f49544431e990b8e0",
+      "url" : "https://i.scdn.co/image/15858d38fdac4af890dcc634f4946c5bf83c0915",
       "width" : 300
     } ],
-    "name" : "Discover Weekly",
+    "name" : "Video Game Masterpieces",
     "owner" : {
       "external_urls" : {
-        "spotify" : "http://open.spotify.com/user/spotifydiscover"
+        "spotify" : "http://open.spotify.com/user/wizzler"
       },
-      "href" : "https://api.spotify.com/v1/users/spotifydiscover",
-      "id" : "spotifydiscover",
+      "href" : "https://api.spotify.com/v1/users/wizzler",
+      "id" : "wizzler",
       "type" : "user",
-      "uri" : "spotify:user:spotifydiscover"
-    },
-    "public" : false,
-    "snapshot_id" : "lpyqm9C+JV8nFpwWg1ONvFAr4N3akZ6AQbWHjZDVtwjWFjX4AtvOGOmhvDEyL3Ks",
-    "tracks" : {
-      "href" : "https://api.spotify.com/v1/users/spotifydiscover/playlists/11gQq65GebkkPj0GH1ed28/tracks",
-      "total" : 30
-    },
-    "type" : "playlist",
-    "uri" : "spotify:user:spotifydiscover:playlist:11gQq65GebkkPj0GH1ed28"
-  }, {
-    "collaborative" : false,
-    "external_urls" : {
-      "spotify" : "http://open.spotify.com/user/12144452596/playlist/72qsWE0zaWYrfaXmqiKsOR"
-    },
-    "href" : "https://api.spotify.com/v1/users/12144452596/playlists/72qsWE0zaWYrfaXmqiKsOR",
-    "id" : "72qsWE0zaWYrfaXmqiKsOR",
-    "images" : [ {
-      "height" : 640,
-      "url" : "https://i.scdn.co/image/3d16a5fcec69e8a5bdd19c2a9a784706ae326962",
-      "width" : 640
-    } ],
-    "name" : "Turma do Pagode",
-    "owner" : {
-      "external_urls" : {
-        "spotify" : "http://open.spotify.com/user/12144452596"
-      },
-      "href" : "https://api.spotify.com/v1/users/12144452596",
-      "id" : "12144452596",
-      "type" : "user",
-      "uri" : "spotify:user:12144452596"
+      "uri" : "spotify:user:wizzler"
     },
     "public" : true,
-    "snapshot_id" : "jlkpxdke7dLMjC+HFPD6uFm8bfySM1wsE2zGQPgGg1JpPaIZe5mV1rVo8IEmcDsr",
+    "snapshot_id" : "LO0O/RGsDLEgeDC3xVR4HisMNsDqoPLE8QBRqllyvevTJ09tFWIUbjrYoEJbUhCa",
     "tracks" : {
-      "href" : "https://api.spotify.com/v1/users/12144452596/playlists/72qsWE0zaWYrfaXmqiKsOR/tracks",
-      "total" : 4
+      "href" : "https://api.spotify.com/v1/users/wizzler/playlists/3FJd21jWvCjGCLx7eKrext/tracks",
+      "total" : 33
     },
     "type" : "playlist",
-    "uri" : "spotify:user:12144452596:playlist:72qsWE0zaWYrfaXmqiKsOR"
+    "uri" : "spotify:user:wizzler:playlist:3FJd21jWvCjGCLx7eKrext"
   }, {
     "collaborative" : false,
     "external_urls" : {
-      "spotify" : "http://open.spotify.com/user/12144452596/playlist/72V1Td2kTQiMymu0oaHTU3"
+      "spotify" : "http://open.spotify.com/user/wizzler/playlist/6cWcjjZlVb8UGW1ZiMKf3l"
     },
-    "href" : "https://api.spotify.com/v1/users/12144452596/playlists/72V1Td2kTQiMymu0oaHTU3",
-    "id" : "72V1Td2kTQiMymu0oaHTU3",
+    "href" : "https://api.spotify.com/v1/users/wizzler/playlists/6cWcjjZlVb8UGW1ZiMKf3l",
+    "id" : "6cWcjjZlVb8UGW1ZiMKf3l",
     "images" : [ {
-      "height" : 640,
-      "url" : "https://mosaic.scdn.co/640/df08fc023b9fdf030ca24e07faca71495ad2f56f170a4a7c76a8d3d3cd5bea3c4b32a0ef90367441aec6da7fa2afdd0bfe91970bdd13961f67ff0f6699c74ed31a48062529804e3ccfb641d7a5578f80",
-      "width" : 640
-    }, {
       "height" : 300,
-      "url" : "https://mosaic.scdn.co/300/df08fc023b9fdf030ca24e07faca71495ad2f56f170a4a7c76a8d3d3cd5bea3c4b32a0ef90367441aec6da7fa2afdd0bfe91970bdd13961f67ff0f6699c74ed31a48062529804e3ccfb641d7a5578f80",
+      "url" : "https://i.scdn.co/image/ade607dfc9a2e1a8d84206b4a067697cded33dc1",
       "width" : 300
-    }, {
-      "height" : 60,
-      "url" : "https://mosaic.scdn.co/60/df08fc023b9fdf030ca24e07faca71495ad2f56f170a4a7c76a8d3d3cd5bea3c4b32a0ef90367441aec6da7fa2afdd0bfe91970bdd13961f67ff0f6699c74ed31a48062529804e3ccfb641d7a5578f80",
-      "width" : 60
     } ],
-    "name" : "Samba",
+    "name" : "Retro Made Modern",
     "owner" : {
       "external_urls" : {
-        "spotify" : "http://open.spotify.com/user/12144452596"
+        "spotify" : "http://open.spotify.com/user/wizzler"
       },
-      "href" : "https://api.spotify.com/v1/users/12144452596",
-      "id" : "12144452596",
+      "href" : "https://api.spotify.com/v1/users/wizzler",
+      "id" : "wizzler",
       "type" : "user",
-      "uri" : "spotify:user:12144452596"
+      "uri" : "spotify:user:wizzler"
     },
     "public" : true,
-    "snapshot_id" : "hi2RZ5pfYCSre6Ec1CExlEJXURfMQcFwzg9VNnn8Oh71k3ofpscwCvOH+B/Mm6Ns",
+    "snapshot_id" : "VyLyk0w9RjwdrGcCzEHi9TMFdJV+YHmSUpHHeSiKSYsVMughaRmxl13NVHrVoMue",
     "tracks" : {
-      "href" : "https://api.spotify.com/v1/users/12144452596/playlists/72V1Td2kTQiMymu0oaHTU3/tracks",
-      "total" : 7
+      "href" : "https://api.spotify.com/v1/users/wizzler/playlists/6cWcjjZlVb8UGW1ZiMKf3l/tracks",
+      "total" : 46
     },
     "type" : "playlist",
-    "uri" : "spotify:user:12144452596:playlist:72V1Td2kTQiMymu0oaHTU3"
+    "uri" : "spotify:user:wizzler:playlist:6cWcjjZlVb8UGW1ZiMKf3l"
   }, {
     "collaborative" : false,
     "external_urls" : {
-      "spotify" : "http://open.spotify.com/user/12144452596/playlist/5z5a3AlKKxRpL4c9Fu1GWA"
+      "spotify" : "http://open.spotify.com/user/wizzler/playlist/00wHcTN0zQiun4xri9pmvX"
     },
-    "href" : "https://api.spotify.com/v1/users/12144452596/playlists/5z5a3AlKKxRpL4c9Fu1GWA",
-    "id" : "5z5a3AlKKxRpL4c9Fu1GWA",
+    "href" : "https://api.spotify.com/v1/users/wizzler/playlists/00wHcTN0zQiun4xri9pmvX",
+    "id" : "00wHcTN0zQiun4xri9pmvX",
     "images" : [ {
-      "height" : 640,
-      "url" : "https://mosaic.scdn.co/640/9472ab821fdd06d6956f199465eec8848f0138db721969e38db8c5fd419bea79fa3376f42877a18905864fd13af5a957471946bc5526a6aa49a6357e0602ed9c52070950d5e63885898afb30f8103cda",
-      "width" : 640
-    }, {
       "height" : 300,
-      "url" : "https://mosaic.scdn.co/300/9472ab821fdd06d6956f199465eec8848f0138db721969e38db8c5fd419bea79fa3376f42877a18905864fd13af5a957471946bc5526a6aa49a6357e0602ed9c52070950d5e63885898afb30f8103cda",
+      "url" : "https://i.scdn.co/image/418ce596327dc3a0f4d377db80421bffb3b94a9a",
       "width" : 300
-    }, {
-      "height" : 60,
-      "url" : "https://mosaic.scdn.co/60/9472ab821fdd06d6956f199465eec8848f0138db721969e38db8c5fd419bea79fa3376f42877a18905864fd13af5a957471946bc5526a6aa49a6357e0602ed9c52070950d5e63885898afb30f8103cda",
-      "width" : 60
     } ],
-    "name" : "Reggae",
+    "name" : "Movie Soundtrack Masterpieces",
     "owner" : {
       "external_urls" : {
-        "spotify" : "http://open.spotify.com/user/12144452596"
+        "spotify" : "http://open.spotify.com/user/wizzler"
       },
-      "href" : "https://api.spotify.com/v1/users/12144452596",
-      "id" : "12144452596",
+      "href" : "https://api.spotify.com/v1/users/wizzler",
+      "id" : "wizzler",
       "type" : "user",
-      "uri" : "spotify:user:12144452596"
+      "uri" : "spotify:user:wizzler"
     },
     "public" : true,
-    "snapshot_id" : "CkU8QrOmnljSVYZGzjqw3L+dlEB7vEWNxL2SBVUdFSJ1lS1Hi1HsGboFvw1lZdq1",
+    "snapshot_id" : "4PHEVfWmkkyopTEl1aZs5WoxxwRSpmKP3saBDKYOViB3pT9ux4AJlHkrcSPZyvJc",
     "tracks" : {
-      "href" : "https://api.spotify.com/v1/users/12144452596/playlists/5z5a3AlKKxRpL4c9Fu1GWA/tracks",
-      "total" : 7
+      "href" : "https://api.spotify.com/v1/users/wizzler/playlists/00wHcTN0zQiun4xri9pmvX/tracks",
+      "total" : 56
     },
     "type" : "playlist",
-    "uri" : "spotify:user:12144452596:playlist:5z5a3AlKKxRpL4c9Fu1GWA"
+    "uri" : "spotify:user:wizzler:playlist:00wHcTN0zQiun4xri9pmvX"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/wizzler/playlist/6JJndiJHFTLBoth7aUrvTt"
+    },
+    "href" : "https://api.spotify.com/v1/users/wizzler/playlists/6JJndiJHFTLBoth7aUrvTt",
+    "id" : "6JJndiJHFTLBoth7aUrvTt",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/4a8f35da1e9b3252d096c6b33d528a6e68ba1da6",
+      "width" : 300
+    } ],
+    "name" : "Blue Mountain State",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/wizzler"
+      },
+      "href" : "https://api.spotify.com/v1/users/wizzler",
+      "id" : "wizzler",
+      "type" : "user",
+      "uri" : "spotify:user:wizzler"
+    },
+    "public" : true,
+    "snapshot_id" : "9HPZH9A6cTjJzdwbjhptIJuuMcubKo3iKNz1xItxuTmcOlqHn5GdBifpo+FWocmd",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/wizzler/playlists/6JJndiJHFTLBoth7aUrvTt/tracks",
+      "total" : 67
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:wizzler:playlist:6JJndiJHFTLBoth7aUrvTt"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/wizzler/playlist/2LZYIzBoCXAdx8buWmUwQe"
+    },
+    "href" : "https://api.spotify.com/v1/users/wizzler/playlists/2LZYIzBoCXAdx8buWmUwQe",
+    "id" : "2LZYIzBoCXAdx8buWmUwQe",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/7c715d15f0d58d3676b69c7871a915922f4dbf73",
+      "width" : 300
+    } ],
+    "name" : "Barney's Get Psyched Mix",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/wizzler"
+      },
+      "href" : "https://api.spotify.com/v1/users/wizzler",
+      "id" : "wizzler",
+      "type" : "user",
+      "uri" : "spotify:user:wizzler"
+    },
+    "public" : true,
+    "snapshot_id" : "2YZ51yYeLimg0+XYqETn3fkLLg8tTEnJKqAED8WNmZ1vyyhz2hpnLqD7XPsygR1P",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/wizzler/playlists/2LZYIzBoCXAdx8buWmUwQe/tracks",
+      "total" : 11
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:wizzler:playlist:2LZYIzBoCXAdx8buWmUwQe"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/martin.danielson/playlist/2HiFqdXD3KVfFS4GeOGS06"
+    },
+    "href" : "https://api.spotify.com/v1/users/martin.danielson/playlists/2HiFqdXD3KVfFS4GeOGS06",
+    "id" : "2HiFqdXD3KVfFS4GeOGS06",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/9018bd818affd75e915efb8a373060ef7e72b831",
+      "width" : 300
+    } ],
+    "name" : "Death Valley 2013",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/martin.danielson"
+      },
+      "href" : "https://api.spotify.com/v1/users/martin.danielson",
+      "id" : "martin.danielson",
+      "type" : "user",
+      "uri" : "spotify:user:martin.danielson"
+    },
+    "public" : true,
+    "snapshot_id" : "o1PQs/t644hoeUicDstibAhw1Py6ADfpHoXGlabxvPJAJEGQuBirkMGOfnzFoUHp",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/martin.danielson/playlists/2HiFqdXD3KVfFS4GeOGS06/tracks",
+      "total" : 27
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:martin.danielson:playlist:2HiFqdXD3KVfFS4GeOGS06"
   } ],
   "limit" : 20,
   "next" : null,
   "offset" : 0,
   "previous" : null,
-  "total" : 7
+  "total" : 8
 }
