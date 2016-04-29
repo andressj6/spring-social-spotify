@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 André Lima / Rafael Peretta.
+ * Copyright 2015 Rafael Peretta/André Lima.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,8 +17,9 @@ package org.springframework.social.spotify.api;
 
 /**
  *
- * @author André
+ * @author Andre
  */
-public interface ArtistOperations {
+public enum AlbumType {
+    album, single, compilation
 
 }

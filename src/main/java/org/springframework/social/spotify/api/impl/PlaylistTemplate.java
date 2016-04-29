@@ -13,9 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package org.springframework.social.spotify.api.impl;
-
 
 import org.springframework.social.spotify.api.CursoredSpotifyList;
 import org.springframework.social.spotify.api.PlaylistOperations;
@@ -25,7 +23,7 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * 
+ *
  * @author Rafael Peretta
  *
  */
@@ -56,7 +54,7 @@ public class PlaylistTemplate extends AbstractSpotifyOperations implements Playl
     public CursoredSpotifyList<SpotifyPlaylist> getUserPlaylists(String userId, int limit,
             int offset) {
         requireUserAuthorization();
-        MultiValueMap<String, String> parameters = new LinkedMultiValueMap<String, String>();
+        MultiValueMap<String, String> parameters = new LinkedMultiValueMap<>();
         parameters.set("limit", String.valueOf(limit));
         parameters.set("offset", String.valueOf(offset));
 

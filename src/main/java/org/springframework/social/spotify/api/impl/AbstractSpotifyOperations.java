@@ -15,7 +15,7 @@ public class AbstractSpotifyOperations {
 
     private final boolean isUserAuthorized;
 
-    private boolean isAppAuthorized;
+    private final boolean isAppAuthorized;
 
     public AbstractSpotifyOperations(boolean isUserAuthorized, boolean isAppAuthorized) {
         this.isUserAuthorized = isAppAuthorized;
@@ -39,7 +39,7 @@ public class AbstractSpotifyOperations {
     }
 
     protected URI buildUri(String path, String parameterName, String parameterValue) {
-        MultiValueMap<String, String> parameters = new LinkedMultiValueMap<String, String>();
+        MultiValueMap<String, String> parameters = new LinkedMultiValueMap<>();
         parameters.set(parameterName, parameterValue);
         return buildUri(path, parameters);
     }
@@ -48,6 +48,6 @@ public class AbstractSpotifyOperations {
         return URIBuilder.fromUri(API_URL_BASE + path).queryParams(parameters).build();
     }
 
-    private static final LinkedMultiValueMap<String, String> EMPTY_PARAMETERS = new LinkedMultiValueMap<String, String>();
+    private static final LinkedMultiValueMap<String, String> EMPTY_PARAMETERS = new LinkedMultiValueMap<>();
 
 }

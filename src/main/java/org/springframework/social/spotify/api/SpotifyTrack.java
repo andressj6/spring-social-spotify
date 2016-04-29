@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 André.
+ * Copyright 2015 Rafael Peretta / Andre Lima.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,71 +15,74 @@
  */
 package org.springframework.social.spotify.api;
 
-import java.io.Serializable;
-import java.util.Arrays;
 import java.util.Objects;
 
-import org.springframework.util.StringUtils;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.List;
+import org.springframework.util.StringUtils;
 
 /**
  *
  * @author André
  */
-public class SpotifyTrack extends SpotifyObject implements Serializable {
+public class SpotifyTrack extends SpotifyObject {
 
-    private SpotifyArtist[] artists;
-    private String[] available_markets;
-    private Integer disc_number;
-    private Integer duration_ms;
+    private List<SpotifyArtist> artists;
+    @JsonProperty("available_markets")
+    private List<String> availableMarkets;
+    @JsonProperty("disc_number")
+    private Integer discNumber;
+    @JsonProperty("duration_ms")
+    private Integer durationMS;
     private boolean explicit;
-    private SpotifyExternalURL external_urls;
+    @JsonProperty("external_urls")
+    private SpotifyExternalURL externalURLs;
     private String href;
     private String id;
-    private boolean is_playable;
-    private SpotifyTrackLink linked_from;
+    @JsonProperty("is_playable")
+    private boolean isPlayable;
+    @JsonProperty("linked_from")
+    private SpotifyTrackLink linkedFrom;
     private String name;
-    private String preview_url;
-    private Integer track_number;
+    @JsonProperty("preview_url")
+    private String previewURL;
+    @JsonProperty("track_number")
+    private Integer trackNumber;
     private String type;
-    private int total;
 
-    public SpotifyTrack(@JsonProperty("href") String href, @JsonProperty("total") int total) {
-        this.href = href;
-        this.total = total;
+    public SpotifyTrack() {
     }
 
-    public SpotifyArtist[] getArtists() {
+    public List<SpotifyArtist> getArtists() {
         return artists;
     }
 
-    public void setArtists(SpotifyArtist[] artists) {
+    public void setArtists(List<SpotifyArtist> artists) {
         this.artists = artists;
     }
 
-    public String[] getAvailable_markets() {
-        return available_markets;
+    public List<String> getAvailableMarkets() {
+        return availableMarkets;
     }
 
-    public void setAvailable_markets(String[] available_markets) {
-        this.available_markets = available_markets;
+    public void setAvailableMarkets(List<String> availableMarkets) {
+        this.availableMarkets = availableMarkets;
     }
 
-    public Integer getDisc_number() {
-        return disc_number;
+    public Integer getDiscNumber() {
+        return discNumber;
     }
 
-    public void setDisc_number(Integer disc_number) {
-        this.disc_number = disc_number;
+    public void setDiscNumber(Integer discNumber) {
+        this.discNumber = discNumber;
     }
 
-    public Integer getDuration_ms() {
-        return duration_ms;
+    public Integer getDurationMS() {
+        return durationMS;
     }
 
-    public void setDuration_ms(Integer duration_ms) {
-        this.duration_ms = duration_ms;
+    public void setDurationMS(Integer durationMS) {
+        this.durationMS = durationMS;
     }
 
     public boolean isExplicit() {
@@ -90,12 +93,12 @@ public class SpotifyTrack extends SpotifyObject implements Serializable {
         this.explicit = explicit;
     }
 
-    public SpotifyExternalURL getExternal_urls() {
-        return external_urls;
+    public SpotifyExternalURL getExternalURLs() {
+        return externalURLs;
     }
 
-    public void setExternal_urls(SpotifyExternalURL external_urls) {
-        this.external_urls = external_urls;
+    public void setExternalURLs(SpotifyExternalURL externalURLs) {
+        this.externalURLs = externalURLs;
     }
 
     public String getHref() {
@@ -114,20 +117,20 @@ public class SpotifyTrack extends SpotifyObject implements Serializable {
         this.id = id;
     }
 
-    public boolean isIs_playable() {
-        return is_playable;
+    public boolean isIsPlayable() {
+        return isPlayable;
     }
 
-    public void setIs_playable(boolean is_playable) {
-        this.is_playable = is_playable;
+    public void setIsPlayable(boolean isPlayable) {
+        this.isPlayable = isPlayable;
     }
 
-    public SpotifyTrackLink getLinked_from() {
-        return linked_from;
+    public SpotifyTrackLink getLinkedFrom() {
+        return linkedFrom;
     }
 
-    public void setLinked_from(SpotifyTrackLink linked_from) {
-        this.linked_from = linked_from;
+    public void setLinkedFrom(SpotifyTrackLink linkedFrom) {
+        this.linkedFrom = linkedFrom;
     }
 
     public String getName() {
@@ -138,20 +141,20 @@ public class SpotifyTrack extends SpotifyObject implements Serializable {
         this.name = name;
     }
 
-    public String getPreview_url() {
-        return preview_url;
+    public String getPreviewURL() {
+        return previewURL;
     }
 
-    public void setPreview_url(String preview_url) {
-        this.preview_url = preview_url;
+    public void setPreviewURL(String previewURL) {
+        this.previewURL = previewURL;
     }
 
-    public Integer getTrack_number() {
-        return track_number;
+    public Integer getTrackNumber() {
+        return trackNumber;
     }
 
-    public void setTrack_number(Integer track_number) {
-        this.track_number = track_number;
+    public void setTrackNumber(Integer trackNumber) {
+        this.trackNumber = trackNumber;
     }
 
     public String getType() {
@@ -163,36 +166,17 @@ public class SpotifyTrack extends SpotifyObject implements Serializable {
     }
 
     @Override
-    public String toString() {
-        return "Track: "+ this.getName() + " - Artists+: " + StringUtils.arrayToCommaDelimitedString(this.getArtists()) + " | " + super.toString();
-    }
-
-    public int getTotal() {
-        return total;
-    }
-
-    @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 97 * hash + Objects.hashCode(this.artists);
-        hash = 97 * hash + Arrays.deepHashCode(this.available_markets);
-        hash = 97 * hash + Objects.hashCode(this.disc_number);
-        hash = 97 * hash + Objects.hashCode(this.duration_ms);
-        hash = 97 * hash + (this.explicit ? 1 : 0);
-        hash = 97 * hash + Objects.hashCode(this.external_urls);
-        hash = 97 * hash + Objects.hashCode(this.href);
-        hash = 97 * hash + Objects.hashCode(this.id);
-        hash = 97 * hash + (this.is_playable ? 1 : 0);
-        hash = 97 * hash + Objects.hashCode(this.linked_from);
-        hash = 97 * hash + Objects.hashCode(this.name);
-        hash = 97 * hash + Objects.hashCode(this.preview_url);
-        hash = 97 * hash + Objects.hashCode(this.track_number);
-        hash = 97 * hash + Objects.hashCode(this.type);
+        int hash = 5;
+        hash = 89 * hash + Objects.hashCode(this.id);
         return hash;
     }
 
     @Override
     public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
         if (obj == null) {
             return false;
         }
@@ -200,49 +184,12 @@ public class SpotifyTrack extends SpotifyObject implements Serializable {
             return false;
         }
         final SpotifyTrack other = (SpotifyTrack) obj;
-        if (!Objects.equals(this.artists, other.artists)) {
-            return false;
-        }
-        if (!Arrays.deepEquals(this.available_markets, other.available_markets)) {
-            return false;
-        }
-        if (!Objects.equals(this.disc_number, other.disc_number)) {
-            return false;
-        }
-        if (!Objects.equals(this.duration_ms, other.duration_ms)) {
-            return false;
-        }
-        if (this.explicit != other.explicit) {
-            return false;
-        }
-        if (!Objects.equals(this.external_urls, other.external_urls)) {
-            return false;
-        }
-        if (!Objects.equals(this.href, other.href)) {
-            return false;
-        }
-        if (!Objects.equals(this.id, other.id)) {
-            return false;
-        }
-        if (this.is_playable != other.is_playable) {
-            return false;
-        }
-        if (!Objects.equals(this.linked_from, other.linked_from)) {
-            return false;
-        }
-        if (!Objects.equals(this.name, other.name)) {
-            return false;
-        }
-        if (!Objects.equals(this.preview_url, other.preview_url)) {
-            return false;
-        }
-        if (!Objects.equals(this.track_number, other.track_number)) {
-            return false;
-        }
-        if (!Objects.equals(this.type, other.type)) {
-            return false;
-        }
-        return true;
+        return Objects.equals(this.id, other.id);
+    }
+
+    @Override
+    public String toString() {
+        return "Track: " + this.getName() + " - Artists : " + StringUtils.collectionToCommaDelimitedString(this.getArtists()) + " | " + super.toString();
     }
 
 }

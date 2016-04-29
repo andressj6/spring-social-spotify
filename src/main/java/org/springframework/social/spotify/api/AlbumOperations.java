@@ -28,10 +28,32 @@ public interface AlbumOperations {
     /**
      * Loads an album by it's spotify id
      *
-     * @param id the spotify id of the album
+     * @param albumId the spotify id of the album
      * @return the album
      * @throws IllegalArgumentException if the id doesn't return any album
      */
-    SpotifyAlbum getAlbum(String id);
+    SpotifyAlbum getAlbum(String albumId);
 
+    /**
+     * Gets several albums
+     *
+     * @param ids
+     * @return
+     */
+    CursoredSpotifyList<SpotifyAlbum> getAlbums(List<String> ids);
+
+    /**
+     * Get an album's list of tracks
+     *
+     * @param albumId
+     * @return
+     */
+    List<SpotifyTrack> getAlbumTracks(String albumId);
+
+    /**
+     * Gets a list of the new releases for the current user
+     *
+     * @return
+     */
+    List<SpotifyAlbum> getNewReleases();
 }

@@ -15,6 +15,7 @@
  */
 package org.springframework.social.spotify.api;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
@@ -25,7 +26,7 @@ import java.util.Objects;
  *
  * @author André
  */
-public abstract class SpotifyObject {
+public abstract class SpotifyObject implements Serializable {
 
     /**
      * The Spotify URI for the object. Every object has a spotify URI

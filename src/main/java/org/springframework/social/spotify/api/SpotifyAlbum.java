@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 André.
+ * Copyright 2015 André Lima / Rafael Peretta.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,7 @@
  */
 package org.springframework.social.spotify.api;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
@@ -22,24 +23,23 @@ import org.springframework.util.StringUtils;
 
 /**
  *
- * @author André
+ * @author André Lima
  */
 public class SpotifyAlbum extends SpotifyObject implements Serializable {
 
-    enum AlbumType {
-
-        album, single, compilation;
-    }
-
-    private AlbumType album_type;
+    @JsonProperty("album_type")
+    private AlbumType albumType;
     private List<SpotifyArtist> artists;
-    private List<String> available_markets;
-    private SpotifyExternalURL external_urls;
+    @JsonProperty("available_markets")
+    private List<String> availableMarkets;
+    @JsonProperty("external_urls")
+    private SpotifyExternalURL externalUrls;
     private String href;
     private String id;
     private List<SpotifyImage> images;
     private String name;
     private String type;
+    private List<SpotifyTrack> tracks;
 
     public SpotifyAlbum() {
     }
@@ -52,28 +52,12 @@ public class SpotifyAlbum extends SpotifyObject implements Serializable {
         this.artists = artists;
     }
 
-    public AlbumType getAlbum_type() {
-        return album_type;
+    public List<String> getAvailableMarkets() {
+        return availableMarkets;
     }
 
-    public void setAlbum_type(AlbumType album_type) {
-        this.album_type = album_type;
-    }
-
-    public List<String> getAvailable_markets() {
-        return available_markets;
-    }
-
-    public void setAvailable_markets(List<String> available_markets) {
-        this.available_markets = available_markets;
-    }
-
-    public SpotifyExternalURL getExternal_urls() {
-        return external_urls;
-    }
-
-    public void setExternal_urls(SpotifyExternalURL external_urls) {
-        this.external_urls = external_urls;
+    public void setAvailableMarkets(List<String> availableMarkets) {
+        this.availableMarkets = availableMarkets;
     }
 
     public String getHref() {
@@ -116,22 +100,42 @@ public class SpotifyAlbum extends SpotifyObject implements Serializable {
         this.type = type;
     }
 
+    public AlbumType getAlbumType() {
+        return albumType;
+    }
+
+    public void setAlbumType(AlbumType albumType) {
+        this.albumType = albumType;
+    }
+
+    public SpotifyExternalURL getExternalUrls() {
+        return externalUrls;
+    }
+
+    public void setExternalUrls(SpotifyExternalURL externalUrls) {
+        this.externalUrls = externalUrls;
+    }
+
+    public List<SpotifyTrack> getTracks() {
+        return tracks;
+    }
+
+    public void setTracks(List<SpotifyTrack> tracks) {
+        this.tracks = tracks;
+    }
+
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 41 * hash + Objects.hashCode(this.album_type);
-        hash = 41 * hash + Objects.hashCode(this.available_markets);
-        hash = 41 * hash + Objects.hashCode(this.external_urls);
-        hash = 41 * hash + Objects.hashCode(this.href);
-        hash = 41 * hash + Objects.hashCode(this.id);
-        hash = 41 * hash + Objects.hashCode(this.images);
-        hash = 41 * hash + Objects.hashCode(this.name);
-        hash = 41 * hash + Objects.hashCode(this.type);
+        int hash = 5;
+        hash = 29 * hash + Objects.hashCode(this.id);
         return hash;
     }
 
     @Override
     public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
         if (obj == null) {
             return false;
         }
@@ -139,28 +143,7 @@ public class SpotifyAlbum extends SpotifyObject implements Serializable {
             return false;
         }
         final SpotifyAlbum other = (SpotifyAlbum) obj;
-        if (this.album_type != other.album_type) {
-            return false;
-        }
-        if (!Objects.equals(this.available_markets, other.available_markets)) {
-            return false;
-        }
-        if (!Objects.equals(this.external_urls, other.external_urls)) {
-            return false;
-        }
-        if (!Objects.equals(this.href, other.href)) {
-            return false;
-        }
         if (!Objects.equals(this.id, other.id)) {
-            return false;
-        }
-        if (!Objects.equals(this.images, other.images)) {
-            return false;
-        }
-        if (!Objects.equals(this.name, other.name)) {
-            return false;
-        }
-        if (!Objects.equals(this.type, other.type)) {
             return false;
         }
         return true;

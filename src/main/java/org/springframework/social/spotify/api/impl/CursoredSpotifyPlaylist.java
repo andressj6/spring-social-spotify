@@ -14,14 +14,14 @@ public class CursoredSpotifyPlaylist {
     }
 
     public CursoredSpotifyPlaylist(
-            @JsonProperty("items") CursoredSpotifyList<SpotifyPlaylist> items, 
+            @JsonProperty("items") CursoredSpotifyList<SpotifyPlaylist> items,
             @JsonProperty("href") String href,
-            @JsonProperty("limit") Integer limit, 
-            @JsonProperty("next") String next, 
-            @JsonProperty("previous") String previous, 
-            @JsonProperty("offset") Integer offset, 
+            @JsonProperty("limit") Integer limit,
+            @JsonProperty("next") String next,
+            @JsonProperty("previous") String previous,
+            @JsonProperty("offset") Integer offset,
             @JsonProperty("total") Integer total) {
-        this.items = new CursoredSpotifyList<SpotifyPlaylist>(items, href, limit, next,
+        this.items = new CursoredSpotifyList<>(items, href, limit, next,
                 previous, offset, total);
     }
 

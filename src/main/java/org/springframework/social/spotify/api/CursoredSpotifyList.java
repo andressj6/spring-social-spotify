@@ -6,10 +6,9 @@ import java.util.Collection;
 /**
  * List that includes previous and next cursors for paging through items
  * returned from Spotify in cursored pages.
- * 
+ *
  * @author Rafael Peretta
- * @param <T>
- *            the list element type
+ * @param <T> the list element type
  */
 @SuppressWarnings("serial")
 public class CursoredSpotifyList<T> extends ArrayList<T> {
@@ -42,7 +41,8 @@ public class CursoredSpotifyList<T> extends ArrayList<T> {
     }
 
     /**
-     * Returns the link to the Web API endpoint returning the full result of the request.
+     * Returns the link to the Web API endpoint returning the full result of the
+     * request.
      */
     public String getHref() {
         return href;
