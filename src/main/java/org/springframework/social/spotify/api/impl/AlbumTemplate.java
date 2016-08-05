@@ -18,8 +18,8 @@ package org.springframework.social.spotify.api.impl;
 import java.util.List;
 import org.springframework.social.spotify.api.AlbumOperations;
 import org.springframework.social.spotify.api.CursoredSpotifyList;
-import org.springframework.social.spotify.api.SpotifyAlbum;
-import org.springframework.social.spotify.api.SpotifyTrack;
+import org.springframework.social.spotify.entities.SpotifyAlbum;
+import org.springframework.social.spotify.entities.SpotifyTrack;
 import org.springframework.web.client.RestTemplate;
 
 /**

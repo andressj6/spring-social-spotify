@@ -2,7 +2,7 @@ package org.springframework.social.spotify.main;
 
 import org.springframework.social.spotify.api.CursoredSpotifyList;
 import org.springframework.social.spotify.api.PlaylistOperations;
-import org.springframework.social.spotify.api.SpotifyPlaylist;
+import org.springframework.social.spotify.entities.SpotifyPlaylist;
 import org.springframework.social.spotify.api.impl.SpotifyTemplate;
 
 public class Main {
