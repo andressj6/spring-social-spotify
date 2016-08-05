@@ -8,8 +8,8 @@ import org.springframework.social.spotify.api.impl.SpotifyTemplate;
 public class Main {
 
     public static void main(String[] args) {
-        SpotifyTemplate spotifyTemplate = new SpotifyTemplate("2e26930515e941c0a29f58de674c1e23",
-                "52003ee0801d4d4d94d1bbc73143bd2d");
+        SpotifyTemplate spotifyTemplate = new SpotifyTemplate("",
+                "");
         PlaylistOperations playlistOperations = spotifyTemplate.playlistOperations();
         CursoredSpotifyList<SpotifyPlaylist> userPlaylists = playlistOperations
                 .getUserPlaylists("12144452596");
