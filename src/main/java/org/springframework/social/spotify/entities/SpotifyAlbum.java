@@ -13,12 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.social.spotify.api;
+package org.springframework.social.spotify.entities;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
+
+import org.springframework.social.spotify.api.AlbumType;
 import org.springframework.util.StringUtils;
 
 /**

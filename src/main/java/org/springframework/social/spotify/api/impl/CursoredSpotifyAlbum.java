@@ -17,7 +17,7 @@ package org.springframework.social.spotify.api.impl;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.social.spotify.api.CursoredSpotifyList;
-import org.springframework.social.spotify.api.SpotifyAlbum;
+import org.springframework.social.spotify.entities.SpotifyAlbum;
 
 /**
  *

@@ -17,6 +17,9 @@ package org.springframework.social.spotify.api;
 
 import java.util.List;
 
+import org.springframework.social.spotify.entities.SpotifyAlbum;
+import org.springframework.social.spotify.entities.SpotifyTrack;
+
 /**
  * Interface defining album-related operations (loading album info, tracks from
  * an album, etc.)

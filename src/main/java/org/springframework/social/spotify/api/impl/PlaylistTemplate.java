@@ -17,7 +17,7 @@ package org.springframework.social.spotify.api.impl;
 
 import org.springframework.social.spotify.api.CursoredSpotifyList;
 import org.springframework.social.spotify.api.PlaylistOperations;
-import org.springframework.social.spotify.api.SpotifyPlaylist;
+import org.springframework.social.spotify.entities.SpotifyPlaylist;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.social.spotify.api;
+package org.springframework.social.spotify.entities;
 
 import java.util.List;
 

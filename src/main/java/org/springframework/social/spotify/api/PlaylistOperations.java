@@ -16,6 +16,7 @@
 package org.springframework.social.spotify.api;
 
 import org.springframework.social.MissingAuthorizationException;
+import org.springframework.social.spotify.entities.SpotifyPlaylist;
 
 /**
  *

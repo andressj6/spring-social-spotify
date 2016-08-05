@@ -15,7 +15,7 @@
  */
 package org.springframework.social.spotify.api.impl;
 
-import org.springframework.social.spotify.api.SpotifyUser;
+import org.springframework.social.spotify.entities.SpotifyUser;
 import org.springframework.social.spotify.api.UserOperations;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;

@@ -5,6 +5,8 @@
  */
 package org.springframework.social.spotify.api;
 
+import org.springframework.social.spotify.entities.SpotifyUser;
+
 /**
  *
  * @author Andre
