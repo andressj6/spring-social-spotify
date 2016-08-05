@@ -1,0 +1,99 @@
+{
+  "href" : "https://api.spotify.com/v1/users/wizzler/playlists?limit=3&offset=2",
+  "items" : [ {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/wizzler/playlist/3FJd21jWvCjGCLx7eKrext"
+    },
+    "href" : "https://api.spotify.com/v1/users/wizzler/playlists/3FJd21jWvCjGCLx7eKrext",
+    "id" : "3FJd21jWvCjGCLx7eKrext",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/15858d38fdac4af890dcc634f4946c5bf83c0915",
+      "width" : 300
+    } ],
+    "name" : "Video Game Masterpieces",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/wizzler"
+      },
+      "href" : "https://api.spotify.com/v1/users/wizzler",
+      "id" : "wizzler",
+      "type" : "user",
+      "uri" : "spotify:user:wizzler"
+    },
+    "public" : true,
+    "snapshot_id" : "LO0O/RGsDLEgeDC3xVR4HisMNsDqoPLE8QBRqllyvevTJ09tFWIUbjrYoEJbUhCa",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/wizzler/playlists/3FJd21jWvCjGCLx7eKrext/tracks",
+      "total" : 33
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:wizzler:playlist:3FJd21jWvCjGCLx7eKrext"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/wizzler/playlist/6cWcjjZlVb8UGW1ZiMKf3l"
+    },
+    "href" : "https://api.spotify.com/v1/users/wizzler/playlists/6cWcjjZlVb8UGW1ZiMKf3l",
+    "id" : "6cWcjjZlVb8UGW1ZiMKf3l",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/ade607dfc9a2e1a8d84206b4a067697cded33dc1",
+      "width" : 300
+    } ],
+    "name" : "Retro Made Modern",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/wizzler"
+      },
+      "href" : "https://api.spotify.com/v1/users/wizzler",
+      "id" : "wizzler",
+      "type" : "user",
+      "uri" : "spotify:user:wizzler"
+    },
+    "public" : true,
+    "snapshot_id" : "VyLyk0w9RjwdrGcCzEHi9TMFdJV+YHmSUpHHeSiKSYsVMughaRmxl13NVHrVoMue",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/wizzler/playlists/6cWcjjZlVb8UGW1ZiMKf3l/tracks",
+      "total" : 46
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:wizzler:playlist:6cWcjjZlVb8UGW1ZiMKf3l"
+  }, {
+    "collaborative" : false,
+    "external_urls" : {
+      "spotify" : "http://open.spotify.com/user/wizzler/playlist/00wHcTN0zQiun4xri9pmvX"
+    },
+    "href" : "https://api.spotify.com/v1/users/wizzler/playlists/00wHcTN0zQiun4xri9pmvX",
+    "id" : "00wHcTN0zQiun4xri9pmvX",
+    "images" : [ {
+      "height" : 300,
+      "url" : "https://i.scdn.co/image/418ce596327dc3a0f4d377db80421bffb3b94a9a",
+      "width" : 300
+    } ],
+    "name" : "Movie Soundtrack Masterpieces",
+    "owner" : {
+      "external_urls" : {
+        "spotify" : "http://open.spotify.com/user/wizzler"
+      },
+      "href" : "https://api.spotify.com/v1/users/wizzler",
+      "id" : "wizzler",
+      "type" : "user",
+      "uri" : "spotify:user:wizzler"
+    },
+    "public" : true,
+    "snapshot_id" : "4PHEVfWmkkyopTEl1aZs5WoxxwRSpmKP3saBDKYOViB3pT9ux4AJlHkrcSPZyvJc",
+    "tracks" : {
+      "href" : "https://api.spotify.com/v1/users/wizzler/playlists/00wHcTN0zQiun4xri9pmvX/tracks",
+      "total" : 56
+    },
+    "type" : "playlist",
+    "uri" : "spotify:user:wizzler:playlist:00wHcTN0zQiun4xri9pmvX"
+  } ],
+  "limit" : 3,
+  "next" : "https://api.spotify.com/v1/users/wizzler/playlists?offset=5&limit=3",
+  "offset" : 2,
+  "previous" : "https://api.spotify.com/v1/users/wizzler/playlists?offset=0&limit=3",
+  "total" : 8
+}

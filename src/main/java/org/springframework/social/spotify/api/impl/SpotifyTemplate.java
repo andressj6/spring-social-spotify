@@ -23,6 +23,8 @@ public class SpotifyTemplate extends AbstractOAuth2ApiBinding implements Spotify
 
     private PlaylistOperations playlistOperations;
 
+    private ProfileOperations profileOperations;
+
     /**
      * Create an instance of SpotifyTemplate.
      *
@@ -45,6 +47,7 @@ public class SpotifyTemplate extends AbstractOAuth2ApiBinding implements Spotify
 
     private void initSubApis() {
         this.playlistOperations = new PlaylistTemplate(getRestTemplate(), isAuthorized(), isAuthorizedForApp());
+        this.profileOperations = new ProfileTemplate(getRestTemplate(), isAuthorized(), isAuthorizedForApp());
     }
 
     private boolean isAuthorizedForApp() {

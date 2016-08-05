@@ -21,4 +21,6 @@ package org.springframework.social.spotify.api;
  */
 public interface ProfileOperations {
     
+    public SpotifyUser getProfile();
+
 }

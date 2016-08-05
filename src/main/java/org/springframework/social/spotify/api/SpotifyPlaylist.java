@@ -31,6 +31,8 @@ public class SpotifyPlaylist extends SpotifyObject {
 
     private Boolean collaborative;
 
+    private String description;
+
     @JsonProperty("external_urls")
     private SpotifyExternalURL externalUrls;
 
@@ -56,11 +58,12 @@ public class SpotifyPlaylist extends SpotifyObject {
         // TODO Auto-generated constructor stub
     }
 
-    public SpotifyPlaylist(String uri, String id, Boolean collaborative,
+    public SpotifyPlaylist(String uri, String id, String description, Boolean collaborative,
             SpotifyExternalURL externalUrls, String href, List<SpotifyImage> images, String name,
             SpotifyUser owner, Boolean status, String snapshotId, SpotifyTrack tracks, String type) {
         super(uri);
         this.id = id;
+        this.description = description;
         this.collaborative = collaborative;
         this.externalUrls = externalUrls;
         this.href = href;
@@ -79,6 +82,14 @@ public class SpotifyPlaylist extends SpotifyObject {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public Boolean getCollaborative() {

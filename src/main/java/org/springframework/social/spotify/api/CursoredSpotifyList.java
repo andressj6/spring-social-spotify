@@ -15,15 +15,15 @@ public class CursoredSpotifyList<T> extends ArrayList<T> {
 
     private String href;
 
-    private Integer limit;
+    private int limit;
 
     private String next;
 
     private String previous;
 
-    private Integer offset;
+    private int offset;
 
-    private Integer total;
+    private int total;
 
     public CursoredSpotifyList() {
         super();
@@ -51,7 +51,7 @@ public class CursoredSpotifyList<T> extends ArrayList<T> {
     /**
      * The maximum number of items in the response.
      */
-    public Integer getLimit() {
+    public int getLimit() {
         return limit;
     }
 
@@ -72,14 +72,14 @@ public class CursoredSpotifyList<T> extends ArrayList<T> {
     /**
      * The offset of the items returned (as set in the query or by default).
      */
-    public Integer getOffset() {
+    public int getOffset() {
         return offset;
     }
 
     /**
      * The total number of items available to return.
      */
-    public Integer getTotal() {
+    public int getTotal() {
         return total;
     }
 

@@ -16,20 +16,30 @@
 package org.springframework.social.spotify.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
+
 import org.springframework.util.StringUtils;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 /**
- *
  * @author André Lima
  */
+@SuppressWarnings("serial")
 public class SpotifyAlbum extends SpotifyObject implements Serializable {
+    enum AlbumType {
+
+        album, single, compilation;
+    }
 
     @JsonProperty("album_type")
     private AlbumType albumType;
+
     private List<SpotifyArtist> artists;
+
     @JsonProperty("available_markets")
     private List<String> availableMarkets;
     @JsonProperty("external_urls")
@@ -42,6 +52,14 @@ public class SpotifyAlbum extends SpotifyObject implements Serializable {
     private List<SpotifyTrack> tracks;
 
     public SpotifyAlbum() {
+    }
+
+    public AlbumType getAlbumType() {
+        return albumType;
+    }
+
+    public void setAlbumType(AlbumType albumType) {
+        this.albumType = albumType;
     }
 
     public List<SpotifyArtist> getArtists() {
@@ -58,6 +76,14 @@ public class SpotifyAlbum extends SpotifyObject implements Serializable {
 
     public void setAvailableMarkets(List<String> availableMarkets) {
         this.availableMarkets = availableMarkets;
+    }
+
+    public SpotifyExternalURL getExternalUrls() {
+        return externalUrls;
+    }
+
+    public void setExternalUrls(SpotifyExternalURL externalUrls) {
+        this.externalUrls = externalUrls;
     }
 
     public String getHref() {
@@ -100,22 +126,6 @@ public class SpotifyAlbum extends SpotifyObject implements Serializable {
         this.type = type;
     }
 
-    public AlbumType getAlbumType() {
-        return albumType;
-    }
-
-    public void setAlbumType(AlbumType albumType) {
-        this.albumType = albumType;
-    }
-
-    public SpotifyExternalURL getExternalUrls() {
-        return externalUrls;
-    }
-
-    public void setExternalUrls(SpotifyExternalURL externalUrls) {
-        this.externalUrls = externalUrls;
-    }
-
     public List<SpotifyTrack> getTracks() {
         return tracks;
     }
@@ -125,28 +135,22 @@ public class SpotifyAlbum extends SpotifyObject implements Serializable {
     }
 
     @Override
-    public int hashCode() {
-        int hash = 5;
-        hash = 29 * hash + Objects.hashCode(this.id);
-        return hash;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+
+        SpotifyAlbum that = (SpotifyAlbum) o;
+
+        return id != null ? id.equals(that.id) : that.id == null;
+
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final SpotifyAlbum other = (SpotifyAlbum) obj;
-        if (!Objects.equals(this.id, other.id)) {
-            return false;
-        }
-        return true;
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + (id != null ? id.hashCode() : 0);
+        return result;
     }
 
     @Override
