@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.springframework.social.spotify.api;
+package org.springframework.social.spotify.entities;
 
 import java.io.Serializable;
 
@@ -21,24 +21,6 @@ import java.io.Serializable;
  *
  * @author André
  */
-@SuppressWarnings("serial")
-public class SpotifyExternalURL implements Serializable {
-
-    private String spotify;
-
-    public SpotifyExternalURL() {
-    }
-
-    public SpotifyExternalURL(String spotify) {
-        this.spotify = spotify;
-    }
-
-    public String getSpotify() {
-        return spotify;
-    }
-
-    public void setSpotify(String spotify) {
-        this.spotify = spotify;
-    }
-
+public class SpotifyTrackLink extends SpotifyObject implements Serializable {
+    
 }
