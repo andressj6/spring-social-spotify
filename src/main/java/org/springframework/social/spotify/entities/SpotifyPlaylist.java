@@ -19,12 +19,15 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import lombok.Data;
+
 /**
  * Spotify playlist simplified object
  *
  * @author Rafael Peretta
  *
  */
+@Data
 public class SpotifyPlaylist extends SpotifyObject {
 
     private String id;
@@ -48,7 +51,7 @@ public class SpotifyPlaylist extends SpotifyObject {
     @JsonProperty("snapshot_id")
     private String snapshotId;
 
-    private SpotifyTrack tracks;
+    private PlaylistTracks tracks;
 
     private String type;
 
@@ -58,7 +61,7 @@ public class SpotifyPlaylist extends SpotifyObject {
 
     public SpotifyPlaylist(String uri, String id, Boolean collaborative,
             SpotifyExternalURL externalUrls, String href, List<SpotifyImage> images, String name,
-            SpotifyUser owner, Boolean status, String snapshotId, SpotifyTrack tracks, String type) {
+            SpotifyUser owner, Boolean status, String snapshotId, PlaylistTracks tracks, String type) {
         super(uri);
         this.id = id;
         this.collaborative = collaborative;
@@ -73,92 +76,10 @@ public class SpotifyPlaylist extends SpotifyObject {
         this.type = type;
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public Boolean getCollaborative() {
-        return collaborative;
-    }
-
-    public void setCollaborative(Boolean collaborative) {
-        this.collaborative = collaborative;
-    }
-
-    public SpotifyExternalURL getExternalUrls() {
-        return externalUrls;
-    }
-
-    public void setExternalUrls(SpotifyExternalURL externalUrls) {
-        this.externalUrls = externalUrls;
-    }
-
-    public String getHref() {
-        return href;
-    }
-
-    public void setHref(String href) {
-        this.href = href;
-    }
-
-    public List<SpotifyImage> getImages() {
-        return images;
-    }
-
-    public void setImages(List<SpotifyImage> images) {
-        this.images = images;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public SpotifyUser getOwner() {
-        return owner;
-    }
-
-    public void setOwner(SpotifyUser owner) {
-        this.owner = owner;
-    }
-
-    public Boolean getStatus() {
-        return status;
-    }
-
-    public void setStatus(Boolean status) {
-        this.status = status;
-    }
-
-    public String getSnapshotId() {
-        return snapshotId;
-    }
-
-    public void setSnapshotId(String snapshotId) {
-        this.snapshotId = snapshotId;
-    }
-
-    public SpotifyTrack getTracks() {
-        return tracks;
-    }
-
-    public void setTracks(SpotifyTrack tracks) {
-        this.tracks = tracks;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
+    @Data
+    class PlaylistTracks {
+        Integer total;
+        String href;
     }
 
 }

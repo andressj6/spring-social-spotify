@@ -15,35 +15,19 @@
  */
 package org.springframework.social.spotify.api.impl;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
+import java.util.List;
+
 import org.springframework.social.spotify.api.CursoredSpotifyList;
 import org.springframework.social.spotify.entities.SpotifyAlbum;
 
 /**
+ * Implementation for retrieving lists of {@link SpotifyAlbum}
  *
  * @author Andre
  */
-public class CursoredSpotifyAlbum {
+public class CursoredSpotifyAlbum extends CursoredSpotifyList<SpotifyAlbum> {
 
-    private final CursoredSpotifyList<SpotifyAlbum> items;
-
-    public CursoredSpotifyAlbum() {
-        this.items = null;
-    }
-
-    public CursoredSpotifyAlbum(
-            @JsonProperty("items") CursoredSpotifyList<SpotifyAlbum> items,
-            @JsonProperty("href") String href,
-            @JsonProperty("limit") Integer limit,
-            @JsonProperty("next") String next,
-            @JsonProperty("previous") String previous,
-            @JsonProperty("offset") Integer offset,
-            @JsonProperty("total") Integer total) {
-        this.items = new CursoredSpotifyList<>(items, href, limit, next,
-                previous, offset, total);
-    }
-
-    public CursoredSpotifyList<SpotifyAlbum> getPlaylists() {
-        return items;
+    public List<SpotifyAlbum> getAlbums() {
+        return getItems();
     }
 }

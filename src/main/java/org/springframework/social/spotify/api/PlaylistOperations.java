@@ -16,38 +16,39 @@
 package org.springframework.social.spotify.api;
 
 import org.springframework.social.MissingAuthorizationException;
+import org.springframework.social.spotify.api.impl.CursoredSpotifyPlaylist;
 import org.springframework.social.spotify.entities.SpotifyPlaylist;
 
 /**
- *
  * @author André
  */
 public interface PlaylistOperations {
 
     /**
      * Retrieves a list of 20 playlists owned or followed by a Spotify user.
-     * 
+     *
      * @param userId the id of Spotify user.
      * @return a collection of {@link SpotifyPlaylist} of given Spotify user ID.
      * @throws MissingAuthorizationException if SpotifyTemplate was not created with OAuth credentials.
      */
-    public CursoredSpotifyList<SpotifyPlaylist> getUserPlaylists(String userId);
+    CursoredSpotifyPlaylist getUserPlaylists(String userId);
 
     /**
-     * Retrieves the playlist owned or followed by a Spotify user. 
+     * Retrieves the playlist owned or followed by a Spotify user.
+     *
      * @param userId the id of Spotify user.
-     * @param pageSize the maximum number of {@link SpotifyPlaylist} to return.
+     * @param limit  the maximum number of {@link SpotifyPlaylist} to return.
      * @throws MissingAuthorizationException if SpotifyTemplate was not created with OAuth credentials.
      */
-    public CursoredSpotifyList<SpotifyPlaylist> getUserPlaylists(String userId, int pageSize);
+    CursoredSpotifyPlaylist getUserPlaylists(String userId, int limit);
 
     /**
-     * Retrieves the playlist owned or followed by a Spotify user. 
+     * Retrieves the playlist owned or followed by a Spotify user.
+     *
      * @param userId the id of Spotify user.
-     * @param pageSize the maximum number of {@link SpotifyPlaylist} to return.
+     * @param limit  the maximum number of {@link SpotifyPlaylist} to return.
      * @param offset the index of the first {@link SpotifyPlaylist} to return.
      * @throws MissingAuthorizationException if SpotifyTemplate was not created with OAuth credentials.
      */
-    public CursoredSpotifyList<SpotifyPlaylist> getUserPlaylists(String userId, int limit,
-            int offset);
+    CursoredSpotifyPlaylist getUserPlaylists(String userId, int limit, int offset);
 }

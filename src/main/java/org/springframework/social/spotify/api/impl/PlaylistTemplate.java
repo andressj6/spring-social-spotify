@@ -23,13 +23,11 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 /**
- *
  * @author Rafael Peretta
- *
  */
 public class PlaylistTemplate extends AbstractSpotifyOperations implements PlaylistOperations {
 
-    private static int DEFAULT_MAX_NUMBER_OF_PLAYLIST = 20;
+    private static int DEFAULT_MAX_NUMBER_OF_PLAYLIST_ITEMS = 20;
 
     private static int DEFAULT_INDEX_OF_FIRST_PLAYLIST = 0;
 
@@ -41,25 +39,24 @@ public class PlaylistTemplate extends AbstractSpotifyOperations implements Playl
     }
 
     @Override
-    public CursoredSpotifyList<SpotifyPlaylist> getUserPlaylists(String userId) {
-        return getUserPlaylists(userId, DEFAULT_MAX_NUMBER_OF_PLAYLIST, DEFAULT_INDEX_OF_FIRST_PLAYLIST);
+    public CursoredSpotifyPlaylist getUserPlaylists(String userId) {
+        return getUserPlaylists(userId, DEFAULT_MAX_NUMBER_OF_PLAYLIST_ITEMS, DEFAULT_INDEX_OF_FIRST_PLAYLIST);
     }
 
     @Override
-    public CursoredSpotifyList<SpotifyPlaylist> getUserPlaylists(String userId, int pageSize) {
-        return getUserPlaylists(userId, pageSize, DEFAULT_INDEX_OF_FIRST_PLAYLIST);
+    public CursoredSpotifyPlaylist getUserPlaylists(String userId, int limit) {
+        return getUserPlaylists(userId, limit, DEFAULT_INDEX_OF_FIRST_PLAYLIST);
     }
 
     @Override
-    public CursoredSpotifyList<SpotifyPlaylist> getUserPlaylists(String userId, int limit,
-            int offset) {
+    public CursoredSpotifyPlaylist getUserPlaylists(String userId, int limit, int offset) {
         requireUserAuthorization();
         MultiValueMap<String, String> parameters = new LinkedMultiValueMap<>();
         parameters.set("limit", String.valueOf(limit));
         parameters.set("offset", String.valueOf(offset));
 
         return restTemplate.getForObject(buildUri("users/" + userId + "/playlists", parameters),
-                CursoredSpotifyPlaylist.class).getPlaylists();
+                CursoredSpotifyPlaylist.class);
     }
 
 }
