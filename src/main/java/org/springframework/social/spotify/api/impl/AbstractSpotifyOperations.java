@@ -13,6 +13,11 @@ public class AbstractSpotifyOperations {
 
     private static final String API_URL_BASE = "https://api.spotify.com/v1/";
 
+    public static final Integer DEFAULT_OFFSET = 0;
+
+    public static final Integer DEFAULT_LIMIT = 20;
+
+
     private final boolean isUserAuthorized;
 
     private final boolean isAppAuthorized;

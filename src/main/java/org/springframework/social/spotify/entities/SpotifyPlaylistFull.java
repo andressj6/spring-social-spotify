@@ -15,44 +15,24 @@
  */
 package org.springframework.social.spotify.entities;
 
-import java.util.List;
+import org.springframework.social.spotify.api.CursoredSpotifyList;
+
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * Spotify playlist simplified object
- * 
- * @author Rafael Peretta
  *
+ * @author Rafael Peretta
  */
+@EqualsAndHashCode(callSuper = true)
+@Getter
+@Setter
 public class SpotifyPlaylistFull extends SpotifyPlaylist {
-    
+
     private SpotifyFollower followers;
-    
-    private List<SpotifyPlaylistTrack> playlistTrack;
 
-    public SpotifyFollower getFollowers() {
-        return followers;
-    }
-
-    public void setFollowers(SpotifyFollower followers) {
-        this.followers = followers;
-    }
-
-    public List<SpotifyPlaylistTrack> getPlaylistTrack() {
-        return playlistTrack;
-    }
-
-    public void setPlaylistTrack(List<SpotifyPlaylistTrack> playlistTrack) {
-        this.playlistTrack = playlistTrack;
-    }
-
-    @Override
-    public SpotifyTrack getTracks() {
-        return null;
-    }
-
-    @Override
-    public void setTracks(SpotifyTrack tracks) {
-
-    }
+    private CursoredSpotifyList<SpotifyPlaylistTrack> playlistTrack;
 
 }

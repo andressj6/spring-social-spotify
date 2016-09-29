@@ -29,10 +29,6 @@ import org.springframework.web.client.RestTemplate;
  */
 public class AlbumTemplate extends AbstractSpotifyOperations implements AlbumOperations {
 
-    private static int DEFAULT_MAX_NUMBER_OF_PLAYLIST = 20;
-
-    private static int DEFAULT_INDEX_OF_FIRST_PLAYLIST = 0;
-
     private final RestTemplate restTemplate;
 
     public AlbumTemplate(RestTemplate restTemplate, boolean isUserAuthorized, boolean isAppAuthorized) {
@@ -42,22 +38,22 @@ public class AlbumTemplate extends AbstractSpotifyOperations implements AlbumOpe
 
     @Override
     public SpotifyAlbum getAlbum(String albumId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
     }
 
     @Override
-    public CursoredSpotifyList<SpotifyAlbum> getAlbums(List<String> ids) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public CursoredSpotifyAlbum getAlbums(List<String> ids) {
+        return null;
     }
 
     @Override
     public List<SpotifyTrack> getAlbumTracks(String albumId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
     }
 
     @Override
     public List<SpotifyAlbum> getNewReleases() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
     }
 
 }

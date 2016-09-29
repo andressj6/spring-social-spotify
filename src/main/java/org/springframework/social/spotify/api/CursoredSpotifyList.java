@@ -2,16 +2,21 @@ package org.springframework.social.spotify.api;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
+
+import org.springframework.social.spotify.entities.SpotifyObject;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  * List that includes previous and next cursors for paging through items
  * returned from Spotify in cursored pages.
  *
- * @author Rafael Peretta
  * @param <T> the list element type
+ * @author Rafael Peretta
  */
 @SuppressWarnings("serial")
-public class CursoredSpotifyList<T> extends ArrayList<T> {
+public class CursoredSpotifyList<T> {
 
     private String href;
 
@@ -25,19 +30,10 @@ public class CursoredSpotifyList<T> extends ArrayList<T> {
 
     private Integer total;
 
+    private List<T> items;
+
     public CursoredSpotifyList() {
         super();
-    }
-
-    public CursoredSpotifyList(Collection<? extends T> collection, String href, Integer limit,
-            String next, String previous, Integer offset, Integer total) {
-        super(collection);
-        this.href = href;
-        this.limit = limit;
-        this.next = next;
-        this.previous = previous;
-        this.offset = offset;
-        this.total = total;
     }
 
     /**
@@ -83,4 +79,12 @@ public class CursoredSpotifyList<T> extends ArrayList<T> {
         return total;
     }
 
+    @JsonProperty("items")
+    protected List<T> getItems() {
+        return items;
+    }
+
+    public boolean hasNext() {
+        return getNext() != null;
+    }
 }

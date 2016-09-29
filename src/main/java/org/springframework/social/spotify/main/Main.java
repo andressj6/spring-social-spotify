@@ -2,6 +2,7 @@ package org.springframework.social.spotify.main;
 
 import org.springframework.social.spotify.api.CursoredSpotifyList;
 import org.springframework.social.spotify.api.PlaylistOperations;
+import org.springframework.social.spotify.api.impl.CursoredSpotifyPlaylist;
 import org.springframework.social.spotify.entities.SpotifyPlaylist;
 import org.springframework.social.spotify.api.impl.SpotifyTemplate;
 
@@ -11,8 +12,8 @@ public class Main {
         SpotifyTemplate spotifyTemplate = new SpotifyTemplate("",
                 "");
         PlaylistOperations playlistOperations = spotifyTemplate.playlistOperations();
-        CursoredSpotifyList<SpotifyPlaylist> userPlaylists = playlistOperations
-                .getUserPlaylists("12144452596");
+        CursoredSpotifyPlaylist userPlaylists = playlistOperations
+                .getUserPlaylists("");
 
         System.out.println("HREF: " + userPlaylists.getHref());
         System.out.println("Next: " + userPlaylists.getNext());
@@ -22,7 +23,7 @@ public class Main {
 
         System.out.println("\nList of Playlist");
 
-        for (SpotifyPlaylist spotifyPlaylist : userPlaylists) {
+        for (SpotifyPlaylist spotifyPlaylist : userPlaylists.getPlaylists()) {
             System.out.println(spotifyPlaylist.getName() + "\nLink: " + spotifyPlaylist.getHref());
         }
 
