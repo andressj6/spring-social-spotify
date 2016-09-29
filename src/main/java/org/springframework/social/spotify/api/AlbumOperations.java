@@ -17,6 +17,7 @@ package org.springframework.social.spotify.api;
 
 import java.util.List;
 
+import org.springframework.social.spotify.api.impl.CursoredSpotifyAlbum;
 import org.springframework.social.spotify.entities.SpotifyAlbum;
 import org.springframework.social.spotify.entities.SpotifyTrack;
 
@@ -43,7 +44,7 @@ public interface AlbumOperations {
      * @param ids
      * @return
      */
-    CursoredSpotifyList<SpotifyAlbum> getAlbums(List<String> ids);
+    CursoredSpotifyAlbum getAlbums(List<String> ids);
 
     /**
      * Get an album's list of tracks
