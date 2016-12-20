@@ -1,10 +1,6 @@
 package org.springframework.social.spotify.api;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
-
-import org.springframework.social.spotify.entities.SpotifyObject;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
