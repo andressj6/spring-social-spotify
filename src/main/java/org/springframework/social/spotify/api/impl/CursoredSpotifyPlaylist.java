@@ -7,11 +7,15 @@ import org.springframework.social.spotify.entities.SpotifyPlaylist;
 
 import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
 public class CursoredSpotifyPlaylist extends CursoredSpotifyList<SpotifyPlaylist> {
 
-    public List<SpotifyPlaylist> getPlaylists() {
-        return getItems();
+    @Override
+    public List<SpotifyPlaylist> getItems() {
+        return this.getItemList();
     }
 
+    @Override
+    public CursoredSpotifyPlaylist getNextBatch(SpotifyTemplate spotifyTemplate) {
+        return spotifyTemplate.getRestTemplate().getForObject(getNext(), CursoredSpotifyPlaylist.class);
+    }
 }

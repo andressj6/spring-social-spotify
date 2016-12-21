@@ -2,7 +2,12 @@ package org.springframework.social.spotify.api;
 
 import java.util.List;
 
+import org.springframework.social.spotify.api.impl.SpotifyTemplate;
+import org.springframework.social.spotify.entities.SpotifyObject;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
+
+import lombok.Data;
 
 /**
  * List that includes previous and next cursors for paging through items
@@ -12,7 +17,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * @author Rafael Peretta
  */
 @SuppressWarnings("serial")
-public class CursoredSpotifyList<T> {
+@Data
+public abstract class CursoredSpotifyList<T extends SpotifyObject> {
 
     private String href;
 
@@ -25,62 +31,22 @@ public class CursoredSpotifyList<T> {
     private Integer offset;
 
     private Integer total;
-
+    @JsonProperty("items")
     private List<T> items;
 
     public CursoredSpotifyList() {
         super();
     }
 
-    /**
-     * Returns the link to the Web API endpoint returning the full result of the
-     * request.
-     */
-    public String getHref() {
-        return href;
-    }
-
-    /**
-     * The maximum number of items in the response.
-     */
-    public Integer getLimit() {
-        return limit;
-    }
-
-    /**
-     * URL to the next page of items.
-     */
-    public String getNext() {
-        return next;
-    }
-
-    /**
-     * The offset of the items returned (as set in the query or by default).
-     */
-    public String getPrevious() {
-        return previous;
-    }
-
-    /**
-     * The offset of the items returned (as set in the query or by default).
-     */
-    public Integer getOffset() {
-        return offset;
-    }
-
-    /**
-     * The total number of items available to return.
-     */
-    public Integer getTotal() {
-        return total;
-    }
-
-    @JsonProperty("items")
-    protected List<T> getItems() {
-        return items;
-    }
+    public abstract <S extends SpotifyObject> List<S> getItems();
 
     public boolean hasNext() {
         return getNext() != null;
     }
+
+    protected List<T> getItemList() {
+        return this.items;
+    }
+
+    public abstract CursoredSpotifyList<T> getNextBatch(SpotifyTemplate spotifyTemplate);
 }

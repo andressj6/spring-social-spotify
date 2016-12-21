@@ -19,12 +19,13 @@ import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import lombok.Data;
+
 /**
- * 
  * @author Rafael Peretta
- *
  */
-public class SpotifyPlaylistTrack {
+@Data
+public class SpotifyPlaylistTrack extends SpotifyObject {
 
     @JsonProperty("added_at")
     private Date addedAt;
@@ -36,37 +37,5 @@ public class SpotifyPlaylistTrack {
     private Boolean local;
 
     private SpotifyTrack track;
-
-    public Date getAddedAt() {
-        return addedAt;
-    }
-
-    public void setAddedAt(Date addedAt) {
-        this.addedAt = addedAt;
-    }
-
-    public SpotifyUser getAddedBy() {
-        return addedBy;
-    }
-
-    public void setAddedBy(SpotifyUser addedBy) {
-        this.addedBy = addedBy;
-    }
-
-    public Boolean getLocal() {
-        return local;
-    }
-
-    public void setLocal(Boolean local) {
-        this.local = local;
-    }
-
-    public SpotifyTrack getTrack() {
-        return track;
-    }
-
-    public void setTrack(SpotifyTrack track) {
-        this.track = track;
-    }
 
 }
